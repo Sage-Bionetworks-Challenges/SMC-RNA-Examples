@@ -64,7 +64,7 @@ steps:
     run: ../tophat/cwl/converter.cwl
     inputs:
     - {id: input, source: "#tophat/tophatOut"}
-    - {id: output, default: "output.bedpe"}
+    - {id: output_filename: "output.bedpe"}
     outputs:
     - {id: fusionout}
 
@@ -74,5 +74,6 @@ steps:
     - {id: input, source: "#converttobedpe/fusionout"}
     - {id: v, default: true}
     - {id: pattern, default: MT}
+    - {id: output_filename_prefix, default: "output"}
     outputs:
     - {id: output}
