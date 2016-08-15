@@ -47,7 +47,7 @@ steps:
       alignSJDBoverhangMin: { default: 10 }
       alignMatesGapMax: { default: 200000 }
       alignIntronMax: { default: 200000 }
-      chimSegmentReadGapMax: { default: parameter}
+      chimSegmentReadGapMax: { default: parameter }
       chim2: { default: 3 }
       alignSJstitchMismatchNmax: { default: 5 }
       align2: { default: -1 }
