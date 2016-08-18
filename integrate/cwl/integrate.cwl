@@ -11,7 +11,7 @@ doc: "INTEGRATE: Fusion Quantification"
 hints:
 
   DockerRequirement:
-    dockerPull: dreamchallenge/integrate
+    dockerPull: docker.synapse.org/syn2813589/integrate
 
 requirements:
 
