@@ -16,8 +16,8 @@ requirements:
   - class: InlineJavascriptRequirement
   - class: InitialWorkDirRequirement
     listing: 
-      - entryname: $(inputs.bam.basename)
-        entry: $(inputs.bam.location.replace("file://",""))
+      - $(inputs.bam)
+
 
 inputs:
 
