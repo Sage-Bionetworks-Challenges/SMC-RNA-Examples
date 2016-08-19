@@ -30,7 +30,7 @@ inputs:
     inputBinding:
       position: 2
 
-  - id: output_filename_prefix
+  output_filename_prefix:
     type: string
 
 outputs:
