@@ -60,7 +60,7 @@ steps:
     run: ../tophat/cwl/converter.cwl
     in:
       input: tophat/tophatOut_fusions
-      output: { default: "output.bedpe" }
+      output_filename: { default: "output.bedpe" }
     out: [fusionout]
 
   filterbedpe:
@@ -69,4 +69,5 @@ steps:
       input: converttobedpe/fusionout
       v: { default: true }
       pattern: { default: MT }
+      output_filename_prefix: { default: "output" }
     out: [output]

@@ -5,7 +5,7 @@
 cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: [convert_tophat_to_bedpe.py]
-stdout: $(inputs.output)
+stdout: $(inputs.output_filename)
 
 doc: "Convert tophat output to bedpe format"
 
@@ -23,7 +23,7 @@ inputs:
     inputBinding:
       position: 1
 
-  output:
+  output_filename:
     type: string
 
 outputs:
@@ -31,4 +31,4 @@ outputs:
   fusionout:
     type: File
     outputBinding:
-      glob: $(inputs.output)
+      glob: $(inputs.output_filename)

@@ -5,9 +5,12 @@
 cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: [grep]
-stdout: filtered_fusion.bedpe
+stdout: $(inputs.output_filename_prefix + '_filtered_fusion.bedpe')
 
 doc: "command line: grep"
+
+requirements:
+  - class: InlineJavascriptRequirement
 
 inputs:
   
@@ -27,9 +30,12 @@ inputs:
     inputBinding:
       position: 2
 
+  - id: output_filename_prefix
+    type: string
+
 outputs:
 
   output:
     type: File
     outputBinding:
-      glob: filtered_fusion.bedpe
+      glob: $(inputs.output_filename_prefix + 'filtered_fusion.bedpe')
