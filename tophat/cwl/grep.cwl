@@ -38,4 +38,4 @@ outputs:
   output:
     type: File
     outputBinding:
-      glob: $(inputs.output_filename_prefix + 'filtered_fusion.bedpe')
+      glob: $(inputs.output_filename_prefix + '_filtered_fusion.bedpe')
