@@ -9,7 +9,7 @@ WORKDIR /opt
 #Install INTEGRATE
 RUN wget https://sourceforge.net/projects/integrate-fusion/files/latest/download && \ 
 	tar zxvf download && \
-	cd INTEGRATE_0_2_5 && \
+	cd INTEGRATE_0_2_6 && \
 	mkdir build && \
 	cd build && \
 	cmake ../Integrate -DCMAKE_BUILD_TYPE=release  && \
